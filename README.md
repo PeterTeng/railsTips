@@ -139,4 +139,58 @@ ruler.length = 1000
 ruder.set_default_length # => 1000
 ```
 
+### Class Inheritance
+
+```ruby
+class Parent
+  def hello_parent
+    puts 'Hello, parent!'
+  end
+end
+
+class Child < Parent
+  def hello_child
+    puts 'Hello, child!'
+  end
+end
+
+child = Child.new
+child.hello_child    # => "Hello, child!"
+chile.hello_parent   # => "Hello, parent!"
+```
+
+### Module
+
+```ruby
+module Hello
+  class Parser
+  end
+end
+module Bye
+  class Parser
+  end
+end
+Hello::Parser
+Bye::Parser
+```
+
+### Hash
+Before ruby 1.9
+```ruby
+colors = {'red' => 'ff0000', 'green' => '00ff00', 'blue' => '0000ff'}
+```
+After ruby 1.9
+```ruby
+colors = {red: 'ff0000', green: '00ff00', blue: '0000ff'}
+colors[:red]
+# or
+colors['red']
+```
+
+### Range
+```ruby
+(1..5).include?(5) # => true
+(1...5).include?(5) # => false
+```
+
 ## Rails
