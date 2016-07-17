@@ -194,3 +194,56 @@ colors['red']
 ```
 
 ## Rails
+
+## Files in rails project
+
+```
+├── Gemfile
+├── Gemfile.lock
+├── README.rdoc
+├── Rakefile
+├── app
+│   ├── assets
+│   ├── controllers   # Controller
+│   ├── helpers
+│   ├── mailers
+│   ├── models        # Model
+│   └── views         # View
+├── bin
+├── config
+├── config.ru
+├── db
+├── lib
+├── log
+├── public
+├── test
+├── tmp
+└── vendor
+```
+### Routing
+Inside `/config/routes.rb`
+
+```ruby
+root 'static#top'
+```
+
+Use only to use specific action(s)
+
+```ruby
+resources :books, only: [:index, :show]
+```
+
+### Model
+
+### Controller
+
+### View
+
+#### HTMl
+- ERB
+- haml
+- slim
+
+#### CSS
+- Sass
+- Less
