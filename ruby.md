@@ -52,6 +52,15 @@ end
 add(5, 4) #=> 9
 ```
 
+```ruby
+def greet(name, message = 'Hi')
+  "#{message}, #{name}"
+end
+
+greet 'Rails' # => "Hi, Rails"
+
+```
+
 ### Block
 
 ```ruby
@@ -189,4 +198,21 @@ colors['red']
 ```ruby
 (1..5).include?(5) # => true
 (1...5).include?(5) # => false
+```
+
+### Object
+
+```ruby
+class MyClass
+end
+
+MyClass.superclass # => object
+
+obj = Object.new
+
+obj.class            # => Object
+obj.is_a?(object)    # => true
+obj.object_id        # => 7397828313322
+obj.nil?             # => false
+obj.frozen?          # => false
 ```
