@@ -6,6 +6,13 @@ For ruby basic tips, checkout [ruby.md](https://github.com/PeterTeng/railsTips/b
 
 ## Rails
 
+### New project
+
+```shell
+$ rails new appName
+$ rails new appName --database=postgresql
+```
+
 ## Files in rails project
 
 ```
