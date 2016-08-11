@@ -127,9 +127,25 @@ end
 
 ### Controller
 
+#### Namespace for controllers
+
+If you want to add a namespace to controllers, categorize the files with folder
+
+```ruby
+```
+
+```ruby
+```
+
+Add base controller for authentication
+
+```ruby
+```
+
+
 ### View
 
-#### HTMl
+#### HTML
 - ERB
 - haml
 - slim
@@ -137,3 +153,6 @@ end
 #### CSS
 - Sass
 - Less
+
+#### Javascript
+- coffee
